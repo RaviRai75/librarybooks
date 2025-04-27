@@ -1,0 +1,270 @@
+/* Global Styling */
+.books {
+  padding: 2vw;
+  background: linear-gradient(90deg, skyblue, rgb(238, 225, 225));
+}
+
+.books .header h1 {
+  text-align: center;
+  background: linear-gradient(90deg, skyblue, rgb(238, 225, 225));
+  font-size: 4vw;
+  color: #333;
+  padding: 1vh 0;
+  border-radius: 5px;
+}
+
+/* Container Grid for Cards */
+.books .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5vh 3vw;
+  justify-content: center;
+  background: linear-gradient(90deg, skyblue, rgb(238, 225, 225));
+  padding: 2vw;
+}
+
+/* Card Styling */
+.books .card {
+  border: 1px solid black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.books .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Section */
+.card .img .img1 {
+  height: 39vh;
+  width: 100%;
+  object-fit: contain;
+ 
+}
+
+/* Text Section */
+.first {
+  text-align: center;
+  padding: 2vh;
+}
+
+.title {
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Information Section */
+.second {
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.second .left1 {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.second .centre1 {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+.categories {
+  font-weight: bold;
+  color: #00796b;
+}
+
+.authors {
+  color: #673ab7;
+}
+
+.status {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0288d1;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vh;
+}
+
+.readmore , .deletebook ,.addcart{
+  padding: 1.5vh 1.8vw;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.readmore {
+  background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+  color: white;
+}
+
+.deletebook {
+  background-color: #c62828;
+  color: white;
+}
+.addcart {
+  background-color: #63de6b;
+  color: white;
+}
+
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.readmore:hover {
+  background-color: #0277bd;
+}
+
+.deletebook:hover {
+  background-color: #a21313;
+}
+.addcart:hover {
+  background-color: #1ee65d;
+}
+
+
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+  background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+}
+
+.back-to-top:focus {
+  outline: none;
+}
+
+.back-to-top.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+@media (max-width: 1024px) {
+  .header h1 {
+    font-size: 3vw;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .img1 {
+    height: 30vh;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .second .left1 {
+    font-size: 1rem;
+  }
+
+  .second .centre1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 5vw;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+
+  .img1 {
+    height: 25vh;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .second .left1 {
+    font-size: 0.9rem;
+  }
+
+  .second .centre1 {
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 1.2vh 1.5vw;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 6vw;
+  }
+
+  .img1 {
+    height: 20vh;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .second .left1 {
+    font-size: 0.8rem;
+  }
+
+  .second .centre1 {
+    font-size: 0.7rem;
+  }
+
+  button {
+    padding: 1vh 1.2vw;
+    font-size: 0.8rem;
+  }
+}

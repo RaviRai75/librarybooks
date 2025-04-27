@@ -1,0 +1,38 @@
+.add-to-cart {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-to-cart h2 {
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .add-to-cart li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .add-to-cart li:last-child {
+    border-bottom: none;
+  }
+  
+  .add-to-cart button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart button:hover {
+    background-color: #ff1a1a;
+  }

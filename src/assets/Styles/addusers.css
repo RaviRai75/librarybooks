@@ -1,0 +1,78 @@
+.addusers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .addusers h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .addusers .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .addusers .container input {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .addusers .container input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .addusers .container input[type="date"] {
+    color: #555;
+  }
+  
+  .addusers .container input[type="text"],
+  .addusers .container input[type="number"],
+  .addusers .container input[type="email"],
+  .addusers .container input[type="password"] {
+    color: #333;
+  }
+  
+  .addusers .container input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  .addusers .container button.Addusers {
+    margin: 15px 17vh;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(33, 122, 157), rgb(202, 218, 223));
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .addusers .container button.Addusers:hover {
+    background: linear-gradient(90deg, rgb(28, 167, 221), rgb(191, 220, 228));
+  }
+  
+  .addusers .container button.Addusers:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  

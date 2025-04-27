@@ -1,0 +1,105 @@
+
+.users, .users h1, .users .container, .users table {
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  .users {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80vw;
+    margin-top: 20px;
+  }
+  
+  
+  .users h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .users table {
+    width: 70vw;
+    border-collapse: collapse;
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+  color: white;
+  }
+  
+  .users table thead tr {
+    background: linear-gradient(90deg, rgb(0, 183, 255), rgb(58, 200, 240));
+    color: white;
+    
+  }
+  
+  .users table th, .users table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .users table tbody tr:nth-child() {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+    max-width: 100%;
+  }
+  
+  .users table tbody tr:hover {
+    background-color: #009dff;
+    transition: background-color 0.3s;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .users table th, .users table td {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .users h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .users .deleteuser, .users .edituser {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .users .deleteuser {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(224, 112, 112));
+    color: white;
+  }
+  
+  .users .deleteuser:hover {
+    background-color: #e60000;
+    box-shadow: 0 4px 8px rgba(255, 77, 77, 0.4);
+  }
+  
+  .users .edituser {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(36, 180, 89));
+    color: white;
+  }
+  
+  .users .edituser:hover {
+    background-color: #388e3c;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.4);
+  }
+  
+  @media (max-width: 768px) {
+    .users .deleteuser, .users .edituser {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  }
+  
+  

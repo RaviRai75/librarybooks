@@ -1,0 +1,92 @@
+/* General Reset */
+body, html, div, h2, input, button, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Addbooks Container */
+  .addbooks {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .addbooks .header {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+  }
+  
+  .addbooks .header h2 {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(98, 200, 228));
+    color: #ffffff;
+    margin: 0;
+    padding: 15px;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  
+  .addbooks .container {
+    padding: 20px;
+    /* display: grid;
+    grid-template-columns: 2fr; */
+  }
+  
+  .addbooks .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Inputs and Button */
+  .addbooks .container input[type="text"],
+  .addbooks .container .addbooksbtn {
+    padding: 12px;
+    border: 1px solid #b0bec5;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .addbooks .container input[type="text"] {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+  }
+  
+  .addbooks .container input[type="text"]:focus {
+    border-color: #00796b;
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.4);
+  }
+  
+ 
+  .addbooks .container .addbooksbtn {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(191, 220, 228));
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .addbooks .container .addbooksbtn:hover {
+    background: linear-gradient(90deg, rgb(112, 200, 235), rgb(0, 200, 255));
+    transform: scale(1.02);
+  }
+  .success-message {
+    color: rgb(90, 157, 234);
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  
